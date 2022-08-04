@@ -18,14 +18,66 @@
     node_modules
     node_modules/
     .env  👉 global varialbe  - 비밀키들 포함되어있음
+
+
+    
+
+  🦄🦄c5. React-Bootstrap Setup, Bootswatch
+    👉components/Header
+    👉components/Footer
+    👉index.js 
+    👉./frontend/public/index.html
+
+
+    🍀snipet
+      rafce
+      imr - import Header from './components/Header'
+
+
+    🍀bootstrap (material UI도 있지만 더 쉬워서 부트스트랩 추천) 
+      
+    🍉bootswatch 👉 -free thems of bootstrap
+
+      다운로드 파일  👉 루트폴더 -frontend-src 폴더로 옮김
+      👉index.js : import './bootstrap.min.css', (index.css위에 코드 넣음)
+
+
+    🍉npm install react-bootstrap bootstrap
+
+    🍉import {Container, Navbar, Nav} from 'react-bootstrap';
+
+
+    🍀fontawesome CDN
+    ./frontend/public/index.html
+
+ 
 */
+
+import React from 'react'
+import Footer from './components/Footer';
+import Header from './components/Header';
+
+// 🍀c5
+import {Container} from 'react-bootstrap';
+
+
 
 // 🍀c4
 // function App() {
 const App = () =>{
   return (
     <div className="App">
-      asdfasdf
+      <h3 className="components_name">home</h3>
+
+      <Header/>
+
+      <main className='py-3'>
+      <Container>
+        <h1>Welcome to ProShop</h1>
+      </Container>
+      </main>
+
+      <Footer/>
     </div>
   );
 }
