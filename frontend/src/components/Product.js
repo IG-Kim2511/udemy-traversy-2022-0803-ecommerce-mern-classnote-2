@@ -13,7 +13,14 @@ const Product = ({p_product}) => {
 
         <Card className='my-3 p-3 rounded'>
             <a href={'/product/${p_product._id}'}>
+
+            
                 <Card.Img src={p_product.image} variant='top'/>
+                
+                
+                <Card.Img src="~~~" variant='top'/>
+
+
             </a>
         </Card>
     </div>
