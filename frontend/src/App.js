@@ -50,6 +50,16 @@
     🍀fontawesome CDN
     ./frontend/public/index.html
 
+
+  🦄🦄c6. HomeScreen Product Listing-products_and_images
+
+    👉자료 images : frontend-public폴더
+    👉자료 data_product : frontend-src폴더
+    👉screens/HomeScreen.js
+
+
+
+    props 방법2 : {~~~}  : destructing syntax
  
 */
 
