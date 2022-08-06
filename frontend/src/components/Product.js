@@ -13,15 +13,26 @@ const Product = ({p_product}) => {
 
         <Card className='my-3 p-3 rounded'>
             <a href={'/product/${p_product._id}'}>
-
-            
-                <Card.Img src={p_product.image} variant='top'/>
-                
-                
-                <Card.Img src="~~~" variant='top'/>
-
-
+            {/*🍉 "~~~" 👉{~~~}로 바꾸어서 쓸 수 있음 */}
+                <Card.Img src={p_product.image} variant='top'/>   
             </a>
+
+            <Card.Body>
+              <a href={'/product/${p_product._id}'}>
+                <Card.Title as="div">
+                  <strong>{p_product.name}</strong>
+                </Card.Title>                
+              </a>
+              
+              <Card.Text as='div'>
+                <div className='my-3'>
+                  ⭐{p_product.rating} rating from {p_product.price}
+                </div>
+              </Card.Text>
+              
+              <Card.Text as='h3'>${p_product.price}</Card.Text>
+
+            </Card.Body>
         </Card>
     </div>
   )
