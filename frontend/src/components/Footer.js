@@ -5,7 +5,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 const Footer = () => {
   return (
     <div>
-       <h3>Footer</h3>
+       <h3 className="components_name">Footer</h3>
 
        <Container>
         <Row>
