@@ -56,6 +56,7 @@
     👉자료 images : frontend-public폴더
     👉자료 data_product : frontend-src폴더
     👉screens/HomeScreen.js
+    👉components/Product.js
 
 
 
