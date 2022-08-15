@@ -1,10 +1,12 @@
 
 /* 
-    🍀c6.
+    🦄c6.
 */
 
 import React from 'react'
 import { Card } from 'react-bootstrap'
+import data_products from '../data_products'
+import Rating from './Rating'
 
 const Product = ({p_product}) => {
   return (
@@ -25,9 +27,12 @@ const Product = ({p_product}) => {
               </a>
               
               <Card.Text as='div'>
-                <div className='my-3'>
-                  ⭐{p_product.rating} rating from {p_product.price}
-                </div>
+                {/*  <div className='my-3'>
+                        ⭐{p_product.rating} rating from {p_product.price}
+                      </div> */}
+
+                {/* 🍀c7 */}
+                <Rating value={data_products.rating} text={`${data_products.numReviews}`}  />
               </Card.Text>
               
               <Card.Text as='h3'>${p_product.price}</Card.Text>

@@ -1,6 +1,6 @@
 
 
-/* 🦄🦄c4. React Setup & Git Initialize, package.json, gitignore 
+/* 🦄🦄🦄c4. React Setup & Git Initialize, package.json, gitignore 
 
   🍀git folder
     <내방식 (rm -rf .git이 에러나서 안됨..)>
@@ -22,7 +22,7 @@
 
     
 
-  🦄🦄c5. React-Bootstrap Setup, Bootswatch
+  🦄🦄🦄c5. React-Bootstrap Setup, Bootswatch
     👉components/Header
     👉components/Footer
     👉index.js 
@@ -51,7 +51,7 @@
     ./frontend/public/index.html
 
 
-  🦄🦄c6. HomeScreen Product Listing-products_and_images
+  🦄🦄🦄c6. HomeScreen Product Listing-products_and_images, Homescreen.js, Product.js
 
     👉자료 images : frontend-public폴더
     👉자료 data_product : frontend-src폴더
@@ -61,6 +61,12 @@
 
 
     props 방법2 : {~~~}  : destructing syntax
+
+
+
+  🦄🦄🦄c7. Rating Component 
+
+
  
 */
 
