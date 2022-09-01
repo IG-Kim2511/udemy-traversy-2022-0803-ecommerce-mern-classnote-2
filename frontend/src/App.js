@@ -1,6 +1,7 @@
 
 
 /* 🦄🦄🦄c4. React Setup & Git Initialize, package.json, gitignore 
+   👉../gitignore
 
   🍀git folder
     <내방식 (rm -rf .git이 에러나서 안됨..)>
