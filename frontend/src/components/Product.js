@@ -11,7 +11,7 @@ import Rating from './Rating'
 const Product = ({product}) => {
   return (
     <div>
-        <h3 className='components_name'>Product</h3>
+        <h3 className='components_name'>🦄c6, 🦄c7Product</h3>
 
         <Card className='my-3 p-3 rounded'>
             <a href={'/product/${p_product._id}'}>

@@ -13,7 +13,7 @@ import data_products from '../data_products'
 const HomeScreen = () => {
   return (
     <div>
-        <h3 className="components_name">HomeScreen</h3>
+        <h3 className="components_name"> 🦄c6.HomeScreen</h3>
         <h1>Latest Products</h1>
         <Row>
             {data_products.map((product)=>(

@@ -10,18 +10,23 @@ import React from 'react'
 const Rating = ({value, text}) => {
   return (
     <div>
-       <h3 className='components_name'>Rating</h3>    
+       <h3 className='components_name'> 🦄c7 Rating</h3>    
 
-       {/* 🍀font awesome
-        html코드 그대로 복사해온것
-        className ={~}으로 수정한것 모두 제대로 적용됨 */}
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star-half-stroke"></i>   
-       <i className={"fa-solid fa-star"}></i>
+       {/*🍀*/}
+      <div>
+        🍀c7. font awesome
+          html코드 그대로 복사해온것
+          className ={}으로 수정한것 모두 제대로 적용됨
 
-       <div>value: {value}</div>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>   
+          <i className={"fa-solid fa-star"}></i>
+      </div>
+
+       <div>value(rating) : {value}</div>
        <div>text: {text}</div>
        
+       {/* 🍀c7. rating 넣기 */}
        <div className="rating">
         <span>
           <i className={value => 1
