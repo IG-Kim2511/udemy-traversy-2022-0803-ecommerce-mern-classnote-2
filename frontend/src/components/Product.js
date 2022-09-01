@@ -5,7 +5,6 @@
 
 import React from 'react'
 import { Card } from 'react-bootstrap'
-import data_products from '../data_products'
 import Rating from './Rating'
 
 // 🦄c6, 🦄c7
@@ -33,7 +32,7 @@ const Product = ({product}) => {
                       </div> */}
 
                 {/* 🍀c7 */}
-                <Rating value={data_products.rating} text={`${data_products.numReviews}`}  />
+                <Rating value={product.rating} text={`${product.numReviews}`}  />
               </Card.Text>
               
               <Card.Text as='h3'>${product.price}</Card.Text>

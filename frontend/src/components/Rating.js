@@ -72,6 +72,7 @@ const Rating = ({value, text}) => {
               }            
           </span>
 
+          {/* 🍀c7. 둘다 같은 뜻 */}
           <span>way1: {text ? text : ""}</span>
           <br/>
           <span>way2: {text && text}</span>
