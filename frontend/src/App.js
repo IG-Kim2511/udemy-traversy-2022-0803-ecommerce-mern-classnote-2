@@ -68,6 +68,8 @@
 
 
   🦄🦄🦄c7. Rating Component 
+      👉components/Product.js
+      👉components/Rating.js
 
 
  
