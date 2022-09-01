@@ -28,6 +28,7 @@
     👉components/Footer
     👉index.js 
     👉./frontend/public/index.html
+  
 
 
     🍀snipet
@@ -54,8 +55,9 @@
 
   🦄🦄🦄c6. HomeScreen Product Listing-products_and_images, Homescreen.js, Product.js
 
-    👉자료 images : frontend-public폴더
-    👉자료 data_product : frontend-src폴더
+
+    👉./frontend/public/images
+    👉./frontend/src/data_products.js
     👉screens/HomeScreen.js
     👉components/Product.js
 
