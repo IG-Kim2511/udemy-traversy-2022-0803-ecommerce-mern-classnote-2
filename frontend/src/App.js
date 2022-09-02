@@ -87,26 +87,56 @@ import Header from './components/Header';
 import {Container} from 'react-bootstrap';
 import HomeScreen from './screens/HomeScreen';
 
+// 🍀c9. router
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+
 
 
 // 🍀c4
 // function App() {
-const App = () =>{
-  return (
-    <div className="App">
-      <h3 className="components_name">home</h3>
 
+// const App = () =>{
+//   return (
+//     <div className="App">
+//       <h3 className="components_name">home</h3>
+
+//       <Header/>
+
+//       <main className='py-3'>
+//         <Container>
+//           <HomeScreen/>
+//         </Container>
+//       </main>
+
+//       <Footer/>
+//     </div>
+//   );
+// }
+
+
+
+// 🍀c9. router
+function App() {
+  return (
+    <BrowserRouter>
+
+      <h3 className="components_name">home</h3>
       <Header/>
 
-      <main className='py-3'>
-        <Container>
-          <HomeScreen/>
-        </Container>
-      </main>
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+      </Routes>
 
       <Footer/>
-    </div>
+    </BrowserRouter>    
   );
 }
+
+
+
 
 export default App;
