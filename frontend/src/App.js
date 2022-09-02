@@ -74,7 +74,7 @@
 
   🦄🦄🦄c9. Implementing React Router (router v5로 강의함... 내 임의대로 v6로 고침)
 
-  👉router v6없이 강의 진행하기. (자꾸 에러남...ㅠㅠ)
+  👉router v6없이 강의 진행하기. (자꾸 에러남...ㅠㅠ) 
 
  
 */
