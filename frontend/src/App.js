@@ -71,7 +71,7 @@
 
 
   🦄🦄🦄8-2 React Router v6 Major Changes
-  🦄🦄🦄c9. Implementing React Router
+  🦄🦄🦄c9. Implementing React Router (router v5로 강의함... 내 임의대로 v6로 고침)
 
 
  
