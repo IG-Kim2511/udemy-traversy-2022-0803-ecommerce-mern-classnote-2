@@ -61,15 +61,17 @@
     👉screens/HomeScreen.js
     👉components/Product.js
 
-
-
     props 방법2 : {~~~}  : destructing syntax
-
 
 
   🦄🦄🦄c7. Rating Component 
       👉components/Product.js
       👉components/Rating.js
+
+
+
+  🦄🦄🦄8-2 React Router v6 Major Changes
+  🦄🦄🦄c9. Implementing React Router
 
 
  
