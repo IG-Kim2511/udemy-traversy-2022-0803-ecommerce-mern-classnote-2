@@ -2,6 +2,8 @@ import React from 'react'
 
 import {Container, Navbar, Nav} from 'react-bootstrap';
 
+// 🦄c9
+import {LinkContainer} from 'react-router-bootstrap'
 
 
 const Header = () => {
@@ -12,12 +14,21 @@ const Header = () => {
         {/*  bg="dark" variant='dark'collapseOnSelect */}
         <Navbar bg="dark" variant='dark' expand="lg" collapseOnSelect>
           <Container>
-            <Navbar.Brand href="/">Proshop</Navbar.Brand>
+           <LinkContainer to="/">           
+            <Navbar.Brand >Proshop</Navbar.Brand>
+           </LinkContainer>
+
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
-                <Nav.Link href="/cart"><i class="fa-solid fa-cart-shopping"></i>Cart</Nav.Link>
-                <Nav.Link href="/login"><i class="fa-solid fa-user"></i>Sign In</Nav.Link>        
+
+                <LinkContainer to="/cart">            
+                  <Nav.Link href=""><i class="fa-solid fa-cart-shopping"></i>Cart</Nav.Link>
+                </LinkContainer>
+
+                <LinkContainer to="/login">           
+                 <Nav.Link href=""><i class="fa-solid fa-user"></i>Sign In</Nav.Link>        
+                </LinkContainer>
               </Nav>
             </Navbar.Collapse>
           </Container>

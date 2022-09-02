@@ -7,6 +7,10 @@ import React from 'react'
 import { Card } from 'react-bootstrap'
 import Rating from './Rating'
 
+
+// 🦄c9
+import {Link} from 'react-router-dom'
+
 // 🦄c6, 🦄c7
 const Product = ({product}) => {
   return (
@@ -14,17 +18,17 @@ const Product = ({product}) => {
         <h3 className='components_name'>🦄c6, 🦄c7Product</h3>
 
         <Card className='my-3 p-3 rounded'>
-            <a href={'/product/${p_product._id}'}>
+            <Link to={'/product/${p_product._id}'}>
             {/*🍉 "~~~" 👉{~~~}로 바꾸어서 쓸 수 있음 */}
                 <Card.Img src={product.image} variant='top'/>   
-            </a>
+            </Link>
 
             <Card.Body>
-              <a href={'/product/${p_product._id}'}>
+              <Link to={'/product/${p_product._id}'}>
                 <Card.Title as="div">
                   <strong>{product.name}</strong>
                 </Card.Title>                
-              </a>
+              </Link>
               
               <Card.Text as='div'>
                 {/*  <div className='my-3'>

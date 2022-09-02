@@ -93,7 +93,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-
+import ProductScreen from './screens/ProductScreen';
 
 
 // 🍀c4
@@ -118,7 +118,6 @@ import {
 // }
 
 
-
 // 🍀c9. router
 function App() {
   return (
@@ -129,6 +128,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomeScreen />} />
+        <Route path="/product/:id" element={<ProductScreen />} />
       </Routes>
 
       <Footer/>
