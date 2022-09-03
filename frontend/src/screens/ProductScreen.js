@@ -1,6 +1,7 @@
 import React from 'react'
-import { Button, Col, Image, Row } from 'react-bootstrap';
+import { Button, Col, Image, ListGroup, ListGroupItem, Row } from 'react-bootstrap';
 import { useNavigate, useParams } from 'react-router-dom';
+import Rating from '../components/Rating';
 import data_products from '../data_products'
 
 const ProductScreen = () => {
@@ -39,11 +40,21 @@ const ProductScreen = () => {
         
         <Row>
           <Col md={6}>
+          <Image src={product.image} fluid ></Image>
             <img src={product.image} alt=""></img>
-            <Image src={product.image} ></Image>
           </Col>
 
-          <Col md={3}></Col>
+          <Col md={3}>
+            <ListGroup>
+              <ListGroupItem>
+                <h2>{product.name}</h2>
+              </ListGroupItem>
+
+              <ListGroupItem>
+                <Rating value={product.rating} text={`${product.numReviews}`}></Rating>
+              </ListGroupItem>
+            </ListGroup>
+          </Col>
           <Col md={3}></Col>
 
         </Row>
