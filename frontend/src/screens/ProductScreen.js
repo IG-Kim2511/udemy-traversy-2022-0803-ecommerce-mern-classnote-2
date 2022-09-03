@@ -28,7 +28,8 @@ const ProductScreen = () => {
         <div>🍀c10-10. </div>
         <div>{product.name}</div>
         
-        <div>  🍀c10-20. </div>
+
+        <p>  🍀c10-20. </p>
         <button onClick={()=>{navigate(-1) }}>  navigate(-1) </button>
         <button onClick={()=>{navigate(-2) }}>  navigate(-2) </button>
         <button onClick={()=>{navigate('/product/2') }}>  navigate('/product/2') </button>
