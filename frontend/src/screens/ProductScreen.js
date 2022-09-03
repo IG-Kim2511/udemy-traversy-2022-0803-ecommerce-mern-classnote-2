@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from 'react-bootstrap';
+import { Button, Col, Image, Row } from 'react-bootstrap';
 import { useNavigate, useParams } from 'react-router-dom';
 import data_products from '../data_products'
 
@@ -29,11 +29,26 @@ const ProductScreen = () => {
         <div>{product.name}</div>
         
 
-        <p>  🍀c10-20. </p>
-        <button onClick={()=>{navigate(-1) }}>  navigate(-1) </button>
-        <button onClick={()=>{navigate(-2) }}>  navigate(-2) </button>
-        <button onClick={()=>{navigate('/product/2') }}>  navigate('/product/2') </button>
-        <button onClick={()=>{navigate('/') }}>  navigate('/') </button>
+        <div>
+          <p>  🍀c10-20. </p>
+          <button onClick={()=>{navigate(-1) }}>  navigate(-1) </button>
+          <button onClick={()=>{navigate(-2) }}>  navigate(-2) </button>
+          <button onClick={()=>{navigate('/product/2') }}>  navigate('/product/2') </button>
+          <button onClick={()=>{navigate('/') }}>  navigate('/') </button>
+        </div>
+        
+        <Row>
+          <Col md={6}>
+            <img src={product.image} alt=""></img>
+            <Image src={product.image} ></Image>
+          </Col>
+
+          <Col md={3}></Col>
+          <Col md={3}></Col>
+
+        </Row>
+
+
     </div>
   )
 }
