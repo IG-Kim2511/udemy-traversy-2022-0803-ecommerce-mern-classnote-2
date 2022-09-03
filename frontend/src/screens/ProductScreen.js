@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Col, Image, ListGroup, ListGroupItem, Row } from 'react-bootstrap';
+import { Button, Card, Col, Image, ListGroup, ListGroupItem, Row } from 'react-bootstrap';
 import { useNavigate, useParams } from 'react-router-dom';
 import Rating from '../components/Rating';
 import data_products from '../data_products'
@@ -63,7 +63,39 @@ const ProductScreen = () => {
               </ListGroupItem>
             </ListGroup>
           </Col>
-          <Col md={3}></Col>
+
+          <Col md={3}>
+            <Card>
+              <ListGroup>
+                <ListGroupItem>
+                  <Row>
+                    <Col>Price : </Col>
+                    <Col>
+                      ${product.price}
+                    </Col>                  
+                  </Row>
+                </ListGroupItem>   
+                
+                <ListGroupItem>
+                  <Row>
+                    <Col>Status : </Col>
+                    <Col>
+                     <p>🍀c10-30. conditional rendering</p>
+                    </Col>
+                    <Col>
+                      {
+                        product.countInStock > 0 
+                        ? 'In Stock'
+                        : 'Out of Stock'
+                      }
+                    </Col>                  
+                  </Row>
+                </ListGroupItem>   
+                
+
+              </ListGroup>
+            </Card>
+          </Col>
 
         </Row>
 
