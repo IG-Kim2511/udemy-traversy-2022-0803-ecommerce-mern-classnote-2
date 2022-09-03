@@ -14,9 +14,11 @@ const Rating = ({value, text}) => {
 
        {/*🍀*/}
       <div>
-        🍀c7. font awesome
+        <p>
+          🍀c7. font awesome
           html코드 그대로 복사해온것
           className ={}으로 수정한것 모두 제대로 적용됨
+        </p>
 
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star-half-stroke"></i>   
@@ -26,7 +28,7 @@ const Rating = ({value, text}) => {
        <div>value(rating) : {value}</div>
        <div>text: {text}</div>
        
-       {/* 🍀c7. rating 넣기 */}
+       <p>🍀c7. rating 넣기</p>
        <div className="rating">
         <span>
           <i className={value => 1
