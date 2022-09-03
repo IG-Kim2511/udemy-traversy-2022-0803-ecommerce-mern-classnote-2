@@ -66,17 +66,7 @@
 
   🦄🦄🦄c7. Rating Component 
       👉components/Product.js
-      👉components/Rating.js
-
-
-
-  🦄🦄🦄8-2 React Router v6 Major Changes
-
-  🦄🦄🦄c9. React Router- Routes, element, Link to= , LinkContainer (router v5로 강의함... 내 임의대로 v6로 고침)
-
-  👉router v6없이 강의 진행하기. (자꾸 에러남...ㅠㅠ) 
-
- 
+      👉components/Rating.js 
 */
 
 import React from 'react'
@@ -117,6 +107,17 @@ import ProductScreen from './screens/ProductScreen';
 //   );
 // }
 
+
+/* 
+🦄🦄🦄8-2 React Router v6 Major Changes
+🦄🦄🦄c9. React Router- Routes, element, Link to= , LinkContainer (router v5로 강의함... 내 임의대로 v6로 고침)
+
+👉router v6없이 강의 진행하기. (자꾸 에러남...ㅠㅠ) 
+
+
+🦄🦄🦄c10. Product Details Screen
+
+*/
 
 // 🍀c9. router
 function App() {

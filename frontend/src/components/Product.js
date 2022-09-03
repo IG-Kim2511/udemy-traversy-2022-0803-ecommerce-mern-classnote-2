@@ -15,16 +15,17 @@ import {Link} from 'react-router-dom'
 const Product = ({product}) => {
   return (
     <div>
-        <h3 className='components_name'>🦄c6, 🦄c7Product</h3>
+        <h3 className='components_name'>🦄c6,🦄c7.Product</h3>
 
         <Card className='my-3 p-3 rounded'>
-            <Link to={'/product/${p_product._id}'}>
+            <Link to={`/product/${product._id}`}>
+            
             {/*🍉 "~~~" 👉{~~~}로 바꾸어서 쓸 수 있음 */}
                 <Card.Img src={product.image} variant='top'/>   
             </Link>
 
             <Card.Body>
-              <Link to={'/product/${p_product._id}'}>
+              <Link to={`/product/${product._id}`}>
                 <Card.Title as="div">
                   <strong>{product.name}</strong>
                 </Card.Title>                
@@ -32,7 +33,7 @@ const Product = ({product}) => {
               
               <Card.Text as='div'>
                 {/*  <div className='my-3'>
-                        ⭐{p_product.rating} rating from {p_product.price}
+                        ⭐{product.rating} rating from {product.price}
                       </div> */}
 
                 {/* 🍀c7 */}
