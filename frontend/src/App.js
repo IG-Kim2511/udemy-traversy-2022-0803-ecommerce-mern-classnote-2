@@ -115,7 +115,7 @@ import ProductScreen from './screens/ProductScreen';
 👉router v6없이 강의 진행하기. (자꾸 에러남...ㅠㅠ) 
 
 
-🦄🦄🦄c10. Product Details Screen
+🦄🦄🦄c10.router -useParams, useNavigate, conditional rendering, Product Details Screen
 👉ProductScreen
 
 

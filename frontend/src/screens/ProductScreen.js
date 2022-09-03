@@ -90,8 +90,15 @@ const ProductScreen = () => {
                       }
                     </Col>                  
                   </Row>
+                </ListGroupItem>                  
+
+                            
+                <ListGroupItem>
+                  <button disabled>Add to Cart</button>
+
+                  <p>🍀c10-40. conditional rendering : inStock이 0이면, 버튼 클릭안되게 함 </p>
+                  <button disabled={product.countInStock ===0 }>🍀disabled={product.countInStock ===0 }</button>                  
                 </ListGroupItem>   
-                
 
               </ListGroup>
             </Card>
