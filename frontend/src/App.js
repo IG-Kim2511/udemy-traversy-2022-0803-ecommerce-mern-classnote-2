@@ -116,6 +116,8 @@ import ProductScreen from './screens/ProductScreen';
 
 
 🦄🦄🦄c10. Product Details Screen
+👉ProductScreen
+
 
 */
 
@@ -129,6 +131,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomeScreen />} />
+        {/* 🍀c10-10.  */}
         <Route path="/product/:id" element={<ProductScreen />} />
       </Routes>
 
