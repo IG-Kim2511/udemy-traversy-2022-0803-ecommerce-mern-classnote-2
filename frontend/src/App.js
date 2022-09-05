@@ -121,6 +121,36 @@ import ProductScreen from './screens/ProductScreen';
 
 🦄🦄🦄c11. 인트로 Front End  Back End Workflow & Explanation
 
+
+🦄🦄🦄c12 👉 server.js
+
+
+🦄🦄🦄c13. Fetching Products From React (useEffect)
+👉HomeScreen
+👉ProductScreen
+
+🍀
+backend- npm start 실행하고있는상태에서
+
+frontend - npm start
+🍀
+this route에서 fetch api할 계획
+
+
+🍀
+.then.....이렇게 해도되지만, 
+
+강사가 async syntax를 더 좋아함
+
+🍀
+react localhost : 3000
+
+
+server localhost : 5000
+
+
+
+👉react localhost address를 5000으로 맞춰줘야함
 */
 
 // 🍀c9. router
