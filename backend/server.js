@@ -9,9 +9,6 @@
 🍀root folder
 npm init
 npm i express
-
-
-
 */
 
 const express = require('express');
@@ -29,10 +26,11 @@ app.get('/api/products',(req,res)=>{
     res.json(products);
 })
 
-app.get('/api/products',(req,res)=>{
+app.get('/api/products/:id',(req,res)=>{
 
-    //🍀12-20. res.json(~)
-    res.json(products);
+    //🍀12-30 Params사용법 - req.params.id
+    const product = products.find((p) => p._id === req.params.id );
+    res.json(product);
 })
 
 
