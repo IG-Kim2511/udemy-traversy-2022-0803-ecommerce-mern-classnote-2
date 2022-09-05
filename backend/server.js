@@ -9,6 +9,12 @@
 🍀root folder
 npm init
 npm i express
+
+🍀root/package.json
+ root folder에서 backend folder의 server.js 실행
+ 
+ "start": "node backend/server"
+ 
 */
 
 const express = require('express');
