@@ -24,8 +24,8 @@ const ProductScreen = () => {
 
   🍀c10-20. useNavigate
   */
-  const { id } = useParams();
-  
+
+  const { id } = useParams();  
   
   // const product = data_products.find((p)=> p._id === id);
 
@@ -34,6 +34,8 @@ const ProductScreen = () => {
   
   useEffect(() => {
     const fetchProduct = async ()=>{
+      
+        // useParams : `/api/products/${id}`
         const res = await axios.get(`/api/products/${id}`);    
         setProduct(res.data);
     }

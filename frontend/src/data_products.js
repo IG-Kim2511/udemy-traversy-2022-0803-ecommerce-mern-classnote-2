@@ -1,3 +1,6 @@
+/* 
+🦄c13 -  backend/server.js 에서 데이터 가져와서.. 이파일은 더이상  필요없음
+
 const data_products = [
   {
     _id: '1',
@@ -80,3 +83,4 @@ const data_products = [
 ]
 
 export default data_products
+ */
