@@ -119,6 +119,8 @@ import ProductScreen from './screens/ProductScreen';
 👉ProductScreen
 
 
+🦄🦄🦄c11. 인트로 Front End  Back End Workflow & Explanation
+
 */
 
 // 🍀c9. router
