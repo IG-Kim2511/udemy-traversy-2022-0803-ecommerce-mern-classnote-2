@@ -129,6 +129,10 @@ import ProductScreen from './screens/ProductScreen';
 👉HomeScreen
 👉ProductScreen
 
+🍀frontend folder 👉 npm i axios
+
+
+
 🍀
 backend- npm start 실행하고있는상태에서
 

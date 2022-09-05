@@ -7,6 +7,7 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import Product from '../components/Product'
+
 import data_products from '../data_products'
 
 // 🍀c6
