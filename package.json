@@ -1,0 +1,23 @@
+{
+  "name": "udemy-traversy-2022-0901-ecommerce-mern-classnote-2",
+  "version": "1.0.0",
+  "description": "MERN shopping cart",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IG-Kim2511/udemy-traversy-2022-0901-ecommerce-mern-classnote-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IG-Kim2511/udemy-traversy-2022-0901-ecommerce-mern-classnote-2/issues"
+  },
+  "homepage": "https://github.com/IG-Kim2511/udemy-traversy-2022-0901-ecommerce-mern-classnote-2#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
