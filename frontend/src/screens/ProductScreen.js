@@ -1,8 +1,18 @@
+
+
+// 🦄c13
+
+
+import axios from 'axios';
 import React from 'react'
+import { useEffect } from 'react';
+import { useState } from 'react';
 import { Button, Card, Col, Image, ListGroup, ListGroupItem, Row } from 'react-bootstrap';
 import { useNavigate, useParams } from 'react-router-dom';
 import Rating from '../components/Rating';
-import data_products from '../data_products'
+
+
+// import data_products from '../data_products'
 
 const ProductScreen = () => {
 
@@ -15,9 +25,23 @@ const ProductScreen = () => {
   🍀c10-20. useNavigate
   */
   const { id } = useParams();
-  const product = data_products.find((p)=> p._id === id);
+  
+  
+  // const product = data_products.find((p)=> p._id === id);
 
-  console.log(product)
+  // 🍀c13
+  const [product, setProduct] = useState([])
+  
+  useEffect(() => {
+    const fetchProduct = async ()=>{
+        const res = await axios.get(`/api/products/${id}`);    
+        setProduct(res.data);
+    }
+
+    fetchProduct();    
+}, [])
+
+
 
   // 🍀c10-20.
   const navigate = useNavigate();
