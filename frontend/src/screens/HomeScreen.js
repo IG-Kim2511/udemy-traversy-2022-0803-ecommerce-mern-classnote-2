@@ -36,10 +36,21 @@ const HomeScreen = () => {
         axios.get('/api/products').then();
          */
 
-        /*🍀
+        /*🍀proxy 👉frontend/package.json
+
+        🍉
         react localhost : 3000
         server localhost : 5000
         👉react localhost address를 5000으로 맞춰줘야함
+
+        🍉Localhost (127.0.0.1)
+         "proxy": "http://localhost:5000/",
+        "proxy": "http://127.0.0.1:5000/",
+
+        둘 다 ㅇㅋ
+
+        🍉
+        주소마지막에 '/' 꼭 넣기
         */
 
         const fetchProducts = async ()=>{
