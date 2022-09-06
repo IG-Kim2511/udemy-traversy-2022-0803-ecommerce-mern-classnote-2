@@ -79,7 +79,7 @@ const data_products = [
   },
 ]
 
-// export default data_products
+export default data_products;
 
 /* 
 🍀12-10. module.exports = data_products
@@ -87,6 +87,7 @@ const data_products = [
 나중에 es Module사용하면 
 export default 로 쓰면됨..
 현재는  es Module 설치안해서..일단 이렇게..
+
+ module.exports = data_products
 */
 
-module.exports = data_products

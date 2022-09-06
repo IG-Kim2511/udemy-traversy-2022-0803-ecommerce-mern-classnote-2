@@ -11,51 +11,80 @@ npm init
 npm i express
 
 🍀root/package.json
- root folder에서 backend folder의 server.js 실행
- 
- "start": "node backend/server"
+root folder에서 backend folder의 server.js 실행
+
+"start": "node backend/server"
 
 
 
- 🦄🦄🦄c14. npm Nodemon, Concurrently 
-    👉package.json
+🦄🦄🦄c14. npm Nodemon, Concurrently 
+👉package.json
 
-    🍀npm i -D nodemon concurrently
-    root folder에서 설치
+🍀npm i -D nodemon concurrently
+root folder에서 설치
 
-    🍀
-        "server": "nodemon backend/server",
-        "client": "npm start --prefix frontend"
+🍀
+"server": "nodemon backend/server",
+"client": "npm start --prefix frontend"
 
-    🍉
-    backend/server에서 nodemon 실행
+🍉
+backend/server에서 nodemon 실행
 
-    1st. frontend folder 먼저 들어감
-    2st. npm start
-
-
-    🍀concurrently
-        "dev": "concurrently \"npm run server\" \"npm run client\""
-
-        Q: 프론트, 백엔드 둘다 동시에 실행시켜야 함
-        1st. run server       , 2st. run frontend
+1st. frontend folder 먼저 들어감
+2st. npm start
 
 
- 🦄🦄🦄c15. npm dotenv,(Environment Variables)
- 👉root/.env
+🍀concurrently
+"dev": "concurrently \"npm run server\" \"npm run client\""
 
- 
- 🦄🦄🦄c16. (import syntax) ES Modules In Node.js
- 
+Q: 프론트, 백엔드 둘다 동시에 실행시켜야 함
+1st. run server       , 2st. run frontend
+
+
+🦄🦄🦄c15. npm dotenv,(Environment Variables)
+👉root/.env
+
+
+🦄🦄🦄c16. (import syntax) ES Modules In Node.js
+👉package.json
+
+
+🍀package.json
+"type": "module",
+
+🍀ES modudle (import ) syntax로 바꾸기
+
+🍀node -v14이상 버전부터 적용됨
+
+🍀frontend의 module syntax와 다른점
+data file 가져올때, 확장명 .js를 붙여야만 함
+
+
+🦄🦄🦄c17. MongoDB Atlas & Compass Setup
+👉root/.env
+
+
+
 */
 
+/* 
 const express = require('express');
 
 // 🍀c15. npm dotenv
 const dotenv = require('dotenv')
 dotenv.config()
 
-const products = require('./data/data_products');
+const products = require('./data/data_products'); 
+*/
+
+
+
+// 🍀c16.Modules
+import express from 'express'
+import dotenv from 'dotenv'
+dotenv.config()
+import products from './data/data_products.js'
+
 
 
 const app = express();
