@@ -18,7 +18,7 @@ node_modules/
 # misc
 .DS_Store
 
-#🍀c4 env
+#🍀c4 env , 🍀c15
 .env  
 .env.local
 .env.development.local

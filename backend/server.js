@@ -39,11 +39,21 @@ npm i express
 
         Q: 프론트, 백엔드 둘다 동시에 실행시켜야 함
         1st. run server       , 2st. run frontend
+
+
+ 🦄🦄🦄c15. npm dotenv, Environment Variables
+ 👉root/.env
  
 */
 
 const express = require('express');
+
+// 🍀c15. npm dotenv
+const dotenv = require('dotenv')
+dotenv.config()
+
 const products = require('./data/data_products');
+
 
 const app = express();
 
@@ -65,4 +75,11 @@ app.get('/api/products/:id',(req,res)=>{
 })
 
 
-app.listen(5000, console.log('IG server-listen 5000') );
+// 🍀c15. dotenv
+
+const PORT = process.env.PORT || 5000;
+
+app.listen( PORT, console.log(`IG server-listen 5000 in ${process.env.NODE_ENV} mode on port ${PORT}`) );
+
+
+// app.listen(5000, console.log('IG server-listen 5000') );
