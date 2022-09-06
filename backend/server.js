@@ -43,6 +43,9 @@ npm i express
 
  🦄🦄🦄c15. npm dotenv,(Environment Variables)
  👉root/.env
+
+ 
+ 🦄🦄🦄c16. (import syntax) ES Modules In Node.js
  
 */
 
