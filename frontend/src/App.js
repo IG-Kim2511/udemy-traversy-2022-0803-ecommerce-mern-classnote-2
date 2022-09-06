@@ -125,19 +125,15 @@ import ProductScreen from './screens/ProductScreen';
 🦄🦄🦄c12 👉 server.js
 
 
-🦄🦄🦄c13. server.js 에서 fetch 데이터, proxy, axios, useEffect, async await, Fetching Products From React (useEffect)
+🦄🦄🦄c13. server.js 에서 fetch 데이터, proxy, axios, useEffect, async await - Fetching Products
 👉HomeScreen
 👉ProductScreen
 
 🍀frontend folder 👉 npm i axios
 
-
-
 🍀
 backend- npm start 실행하고있는상태에서
-
 frontend - npm start
-
 
 */
 

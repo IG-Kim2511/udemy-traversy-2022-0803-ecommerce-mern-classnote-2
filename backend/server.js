@@ -23,7 +23,7 @@ const products = require('./data/data_products');
 const app = express();
 
 app.get('/',(req,res)=>{
-    res.send('IG api is running');
+    res.send('IG server-get is running');
 })
 
 app.get('/api/products',(req,res)=>{
@@ -40,4 +40,4 @@ app.get('/api/products/:id',(req,res)=>{
 })
 
 
-app.listen(5000, console.log('IG server 5000') );
+app.listen(5000, console.log('IG server-listen 5000') );
