@@ -136,29 +136,9 @@ backend- npm start 실행하고있는상태에서
 frontend - npm start
 
 
-
-🦄🦄🦄c14. Nodemon & Concurrently Setup
-👉package.json
-
-🍀npm i -D nodemon concurrently
-root folder에서 설치
-
-🍀
-    "server": "nodemon backend/server",
-    "client": "npm start --prefix frontend"
-
-🍉
-  backend/server에서 nodemon 실행
-
-  1st. frontend folder 먼저 들어감
-  2st. npm start
+🦄🦄🦄c14. 👉 server.js
 
 
-🍀concurrently
-    "dev": "concurrently \"npm run server\" \"npm run client\""
-
-    Q: 프론트, 백엔드 둘다 동시에 실행시켜야 함
-    1st. run server       , 2st. run frontend
 */
 
 // 🍀c9. router
@@ -179,8 +159,6 @@ function App() {
     </BrowserRouter>    
   );
 }
-
-
 
 
 export default App;

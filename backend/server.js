@@ -14,6 +14,31 @@ npm i express
  root folder에서 backend folder의 server.js 실행
  
  "start": "node backend/server"
+
+
+
+ 🦄🦄🦄c14. npm Nodemon, Concurrently 
+    👉package.json
+
+    🍀npm i -D nodemon concurrently
+    root folder에서 설치
+
+    🍀
+        "server": "nodemon backend/server",
+        "client": "npm start --prefix frontend"
+
+    🍉
+    backend/server에서 nodemon 실행
+
+    1st. frontend folder 먼저 들어감
+    2st. npm start
+
+
+    🍀concurrently
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+
+        Q: 프론트, 백엔드 둘다 동시에 실행시켜야 함
+        1st. run server       , 2st. run frontend
  
 */
 
