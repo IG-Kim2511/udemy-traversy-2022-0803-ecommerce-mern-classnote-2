@@ -135,6 +135,24 @@ import ProductScreen from './screens/ProductScreen';
 backend- npm start 실행하고있는상태에서
 frontend - npm start
 
+
+
+🦄🦄🦄c14. Nodemon & Concurrently Setup
+
+
+🍀
+backend/server에서 nodemon 실행
+
+1st. frontend folder 먼저 들어감
+2st. npm start
+
+
+🍀
+Q: 프론트, 백엔드 둘다 동시에 실행시켜야 함
+
+1st. run server       , 2st. run frontend
+
+
 */
 
 // 🍀c9. router
