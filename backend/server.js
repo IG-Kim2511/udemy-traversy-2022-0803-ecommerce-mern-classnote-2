@@ -41,7 +41,7 @@ npm i express
         1st. run server       , 2st. run frontend
 
 
- 🦄🦄🦄c15. npm dotenv, Environment Variables
+ 🦄🦄🦄c15. npm dotenv,(Environment Variables)
  👉root/.env
  
 */
