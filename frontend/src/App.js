@@ -138,21 +138,27 @@ frontend - npm start
 
 
 🦄🦄🦄c14. Nodemon & Concurrently Setup
+👉package.json
 
-
-🍀
-backend/server에서 nodemon 실행
-
-1st. frontend folder 먼저 들어감
-2st. npm start
-
+🍀npm i -D nodemon concurrently
+root folder에서 설치
 
 🍀
-Q: 프론트, 백엔드 둘다 동시에 실행시켜야 함
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend"
 
-1st. run server       , 2st. run frontend
+🍉
+  backend/server에서 nodemon 실행
+
+  1st. frontend folder 먼저 들어감
+  2st. npm start
 
 
+🍀concurrently
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+
+    Q: 프론트, 백엔드 둘다 동시에 실행시켜야 함
+    1st. run server       , 2st. run frontend
 */
 
 // 🍀c9. router
