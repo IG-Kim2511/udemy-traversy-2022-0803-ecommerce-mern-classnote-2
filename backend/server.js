@@ -48,7 +48,6 @@ Q: 프론트, 백엔드 둘다 동시에 실행시켜야 함
 🦄🦄🦄c16. (import syntax) ES Modules In Node.js
 👉package.json
 
-
 🍀package.json
 "type": "module",
 
@@ -65,38 +64,9 @@ data file 가져올때, 확장명 .js를 붙여야만 함
 
 
 🦄🦄🦄c18 mongoose.js, Connecting Database
+👉backend/config/db.js  
 
-🍀
-import mongoose from "mongoose";
- 
-const connectDB = async () => {
-  try {
-    const conn = await mongoose.connect(process.env.MONGO_URI, {
-      //   useNewUrlParser: true,
-      //   useUnifiedTopology: true,
-      //   useCreateIndex: true,
-    });
-    console.log(`Connected to MongoDB through: ${conn.connection.host}`);
-  } catch (err) {
-    console.error(`Error: Could not connect to MongoDB... ${err.message}`);
-    process.exit(1);
-  }
-};
-export default connectDB;
 
-🍀
-import mongoose from "mongoose";
- 
-mongoose.connect(process.env.MONGO_URI, ({
-    useNewUrlParser: true, 
-    useUnifiedTopology: true
-}))
- 
-const db = mongoose.connection
-    db.on('error', error => console.log(error))
-    db.once('open', () => console.log('Conectado a la BBDD!!!'))
- 
- export default connectDB;🍀🍀
 
 
 
@@ -116,10 +86,18 @@ const products = require('./data/data_products');
 
 // 🍀c16.Modules
 import express from 'express'
+
+// dotenv
 import dotenv from 'dotenv'
 dotenv.config()
+
+// file
 import products from './data/data_products.js'
 
+// 🍀c18. import... 외부 함수 불러오기
+// 함수실행은 import 작명한 이름 사용함
+import connectDB from './config/db.js'
+connectDB();
 
 
 const app = express();
@@ -143,6 +121,7 @@ app.get('/api/products/:id',(req,res)=>{
 
 
 // 🍀c15. dotenv
+// process.env.~~~
 
 const PORT = process.env.PORT || 5000;
 
