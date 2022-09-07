@@ -125,7 +125,7 @@ import ProductScreen from './screens/ProductScreen';
 🦄🦄🦄c12 👉 server.js
 
 
-🦄🦄🦄c13. server.js 에서 fetch 데이터, proxy, axios, useEffect, async await - Fetching Products
+🦄🦄🦄c13. server.js 에서 fetch 데이터, proxy, axios, useEffect, async await (Fetching Products)
 👉HomeScreen
 👉ProductScreen
 

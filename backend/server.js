@@ -100,7 +100,16 @@ import products from './data/data_products.js'
 import connectDB from './config/db.js'
 connectDB();
 
+/* 🍀c18. moongoose document 코드 여기에 복붙해도 실행됨
 
+import mongoose from 'mongoose'
+mongoose.connect(process.env.MONGO_URI);
+
+const Cat = mongoose.model('Cat', { name: String });
+
+const kitty = new Cat({ name: 'Zildjian' });
+kitty.save().then(() =>  console.log(`IG - mongoose mongoDB connected`));
+*/
 
 app.get('/',(req,res)=>{
     res.send('IG server-get is running');
