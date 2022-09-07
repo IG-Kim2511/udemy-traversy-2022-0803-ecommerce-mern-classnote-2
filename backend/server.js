@@ -67,8 +67,8 @@ data file 가져올때, 확장명 .js를 붙여야만 함
 👉backend/config/db.js  
 
 
-
-
+🦄🦄🦄c19 npm colors, console에 color넣기 (Optional)
+👉backend/config/db.js  
 
 */
 
@@ -99,6 +99,11 @@ import products from './data/data_products.js'
 // 함수실행은 import 작명한 이름 사용함
 import connectDB from './config/db.js'
 connectDB();
+
+// 🍀c19.
+import colors from 'colors'
+
+
 
 /* 🍀c18. moongoose document 코드 여기에 복붙해도 실행됨
 
@@ -132,9 +137,11 @@ app.get('/api/products/:id',(req,res)=>{
 // 🍀c15. dotenv
 // process.env.~~~
 
+// 🍀c19. console에 color : .underline.rainbow.bold
+
 const PORT = process.env.PORT || 5000;
 
-app.listen( PORT, console.log(`IG server-listen 5000 in ${process.env.NODE_ENV} mode on port ${PORT}`) );
+app.listen( PORT, console.log(`IG server-listen 5000 in ${process.env.NODE_ENV} mode on port ${PORT}`.underline.rainbow.bold) );
 
 
 // app.listen(5000, console.log('IG server-listen 5000') );
