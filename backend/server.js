@@ -64,6 +64,41 @@ data file 가져올때, 확장명 .js를 붙여야만 함
 👉root/.env
 
 
+🦄🦄🦄c18 mongoose.js, Connecting Database
+
+🍀
+import mongoose from "mongoose";
+ 
+const connectDB = async () => {
+  try {
+    const conn = await mongoose.connect(process.env.MONGO_URI, {
+      //   useNewUrlParser: true,
+      //   useUnifiedTopology: true,
+      //   useCreateIndex: true,
+    });
+    console.log(`Connected to MongoDB through: ${conn.connection.host}`);
+  } catch (err) {
+    console.error(`Error: Could not connect to MongoDB... ${err.message}`);
+    process.exit(1);
+  }
+};
+export default connectDB;
+
+🍀
+import mongoose from "mongoose";
+ 
+mongoose.connect(process.env.MONGO_URI, ({
+    useNewUrlParser: true, 
+    useUnifiedTopology: true
+}))
+ 
+const db = mongoose.connection
+    db.on('error', error => console.log(error))
+    db.once('open', () => console.log('Conectado a la BBDD!!!'))
+ 
+ export default connectDB;🍀🍀
+
+
 
 */
 
