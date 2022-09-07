@@ -86,6 +86,7 @@ const products = require('./data/data_products');
 
 // 🍀c16.Modules
 import express from 'express'
+const app = express();
 
 // dotenv
 import dotenv from 'dotenv'
@@ -100,7 +101,6 @@ import connectDB from './config/db.js'
 connectDB();
 
 
-const app = express();
 
 app.get('/',(req,res)=>{
     res.send('IG server-get is running');
