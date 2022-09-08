@@ -7,6 +7,8 @@ const reviewSchema = mongoose.Schema({
     name:{type : String, required : true},
     rating:{type : String, required : true},      //독립된 rating,  밑의 rating은 전체의 평균이 될 예정
     comment:{type : String, required : true}  
+},{
+    timestamps:true
 });
 
 
@@ -69,6 +71,6 @@ const productSchema = mongoose.Schema({
 
 // 🍀c20. collection이름 생성
 
-// const User = mongoose.model('User',userSchema)
+const Product = mongoose.model('Product',productSchema)
 
-// export default User
+export default User

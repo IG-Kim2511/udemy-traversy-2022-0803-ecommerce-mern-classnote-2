@@ -14,7 +14,7 @@ array
 밑의 rating은 전체의 평균이 될 예정
 */
 
-const userModel = mongoose.Schema({
+const userSchema = mongoose.Schema({
     name:{
         type : String,
         required: true,     //🍀c20.required : this property가 require함. 없으면 에러
