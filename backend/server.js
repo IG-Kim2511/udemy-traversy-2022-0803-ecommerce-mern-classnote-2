@@ -73,6 +73,9 @@ data file 가져올때, 확장명 .js를 붙여야만 함
 
 
 🦄🦄🦄c20 mongoose.js, schema-data만들기 (Modeling Our Data)
+👉backend/models/userModel.js   -- 여기에 필기함
+👉backend/models/orderModel.js
+👉backend/models/productModel.js
 
 */
 
