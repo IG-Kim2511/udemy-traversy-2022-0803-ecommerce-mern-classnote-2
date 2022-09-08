@@ -17,21 +17,21 @@ array
 const userModel = mongoose.Schema({
     name:{
         type : String,
-        required: true      //🍀c20.required : this property가 require함. 없으면 에러
+        required: true,     //🍀c20.required : this property가 require함. 없으면 에러
     },
     email:{
         type : String,
         required: true ,
-        unique: true        //🍀c20.unique : 1명이 1개의 email
+        unique: true ,       //🍀c20.unique : 1명이 1개의 email
     },
     password:{
         type : String,
-        required: true   
+        required: true  , 
     },
     isAdmin:{
         type : Boolean,
         required: true ,
-        default : false
+        default : false,
         /* 🍀c20.
         (conditional rendering)
         isAdmin : default : false
