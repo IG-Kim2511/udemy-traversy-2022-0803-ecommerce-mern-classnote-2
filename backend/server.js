@@ -70,6 +70,10 @@ data file 가져올때, 확장명 .js를 붙여야만 함
 🦄🦄🦄c19 npm colors, console에 color넣기 (Optional)
 👉backend/config/db.js  
 
+
+
+🦄🦄🦄c20 mongoose.js, schema-data만들기 (Modeling Our Data)
+
 */
 
 /* 
@@ -107,13 +111,10 @@ import colors from 'colors'
 
 /* 🍀c18. moongoose document 코드 여기에 복붙해도 실행됨
 
+🍉web DEv Simplified 코드
+
 import mongoose from 'mongoose'
 mongoose.connect(process.env.MONGO_URI);
-
-const Cat = mongoose.model('Cat', { name: String });
-
-const kitty = new Cat({ name: 'Zildjian' });
-kitty.save().then(() =>  console.log(`IG - mongoose mongoDB connected`));
 */
 
 app.get('/',(req,res)=>{
