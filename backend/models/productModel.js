@@ -69,7 +69,7 @@ const productSchema = mongoose.Schema({
 })
 
 
-// 🍀c20. collection이름 생성
+
 
 const Product = mongoose.model('Product',productSchema)
 
