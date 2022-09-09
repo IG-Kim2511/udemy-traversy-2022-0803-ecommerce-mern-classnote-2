@@ -77,6 +77,14 @@ data file 가져올때, 확장명 .js를 붙여야만 함
 👉2 backend/models/productModel.js
 👉3 backend/models/orderModel.js
 
+
+🦄🦄🦄c21 bcryptjs, (Preparing Sample Data)
+👉 backend/data/data_products.js
+👉 backend/data/users.js
+👉1 backend/models/userModel.js 
+
+
+
 */
 
 /* 
