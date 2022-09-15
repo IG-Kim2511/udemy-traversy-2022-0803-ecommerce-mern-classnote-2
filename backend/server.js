@@ -85,6 +85,35 @@ data file 가져올때, 확장명 .js를 붙여야만 함
 
 
 
+--------------------🦄🦄🦄거의 포기상태 (걍 캡쳐, 필기만 해둠)🦄🦄🦄----------------------
+
+
+🦄🦄🦄c22 Data Seeder Script
+
+🍀
+명령어에 '-d'가 있으면 destroyData() 실행
+명령어에 '-d'가 없으면 importData() 실행
+
+
+
+🦄🦄🦄c23 npm express-async-handler, Fetching Products From The Database
+
+
+🦄🦄🦄c24 Postman, Getting Started With Postman
+
+
+
+
+🦄🦄🦄c27. npm redux, redux-thunk, redux-devtools-extension (Create a Redux Store)
+
+
+
+🦄🦄🦄c80. npm multer (Image Upload Config & Endpoint)
+
+
+
+
+
 */
 
 /* 
